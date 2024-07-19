@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
+import About from './components/About';
 
 const colorModes = [
     { background: '#FFECDD', color: '#FA3701', borderColor: '#FA3701' },
@@ -28,10 +29,9 @@ function App() {
     return (
         <div className="App">
             <div className="wrap">
-                <div className="main_wrap">
-                    <Header changeMood={changeMood} />
-                    <Main />
-                </div>
+                <Header changeMood={changeMood} />
+                <Main />
+                <About />
             </div>
         </div>
     );
