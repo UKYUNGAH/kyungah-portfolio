@@ -4,7 +4,7 @@ import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 const Main = () => {
     return (
         <div className="main">
-            <div className="container">
+            <div className="container main_wrap">
                 <div className="title">
                     <h1>Kyungah Portfolio</h1>
                 </div>
