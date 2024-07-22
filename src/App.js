@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import About from './components/About';
+import Lenis from 'lenis';
 
 const colorModes = [
     { background: '#FFECDD', color: '#FA3701', borderColor: '#FA3701' },
@@ -26,11 +27,22 @@ function App() {
         root.style.setProperty('--border-color', newMode.borderColor);
     };
 
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    }, []);
+
     return (
         <div className="App">
             <div className="wrap">
                 <Header changeMood={changeMood} />
-                <Main />
+                <Main data-aos="fade-up" />
                 <About />
             </div>
         </div>
