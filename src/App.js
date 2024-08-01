@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import About from './components/About';
 import Lenis from 'lenis';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Contact from './components/Contact';
 
 const colorModes = [
     { background: '#FFECDD', color: '#FA3701', borderColor: '#FA3701' },
@@ -16,7 +18,6 @@ const colorModes = [
 
 function App() {
     const [modeIndex, setModeIndex] = useState(0);
-
     const changeMood = () => {
         setModeIndex((prevIndex) => (prevIndex + 1) % colorModes.length);
         const root = document.documentElement;
@@ -44,6 +45,10 @@ function App() {
                 <Header changeMood={changeMood} />
                 <Main data-aos="fade-up" />
                 <About />
+
+                <Routes>
+                    <Route path="/Contact" element={<Contact />} />
+                </Routes>
             </div>
         </div>
     );

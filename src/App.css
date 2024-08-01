@@ -22,6 +22,7 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    display: none;
 }
 .header_wrap {
     display: flex;
@@ -148,6 +149,81 @@
 }
 
 .next-section {
+}
+
+.header {
+    display: block;
+}
+.contact {
+    position: relative;
+    z-index: 99;
+    display: none;
+}
+.contact .container {
+    width: 100%;
+    height: 100vh;
+    /* padding: 100px 130px; */
+    background: var(--background-color);
+}
+.contact .wrap {
+    display: flex;
+}
+.contact .left {
+    width: 50%;
+}
+.contact h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.contact h2 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 66px;
+}
+.contact .l_top {
+}
+.contact .l_top h4 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 72px;
+}
+.contact .l_bottom {
+}
+.contact .l_bottom h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.contact .skil_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.contact span {
+    display: block;
+    width: 82px;
+    text-align: center;
+    padding: 6px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.contact .right {
+    width: 50%;
+}
+.contact .list_box {
+}
+.contact h5 {
+}
+.contact a {
+}
+.contact .text_box {
+}
+.contact button {
+    display: none;
 }
 
 @media (max-width: 700px) {

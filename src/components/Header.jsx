@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link, Routes, Route, useLocation } from 'react-router-dom';
 
 const Header = ({ changeMood }) => {
+    const location = useLocation();
     useEffect(() => {
         AOS.init();
     }, []);
+
+    // if (location.pathname === '/Contact') {
+    //     return null;
+    // }
 
     return (
         <div className="header">
@@ -17,7 +23,7 @@ const Header = ({ changeMood }) => {
                     </button>
                 </div>
                 <div className="hr">
-                    <button>contact</button>
+                    <Link to="/Contact">contact</Link>
                 </div>
             </div>
         </div>
