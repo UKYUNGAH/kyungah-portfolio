@@ -109,11 +109,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 .about h2 {
     font-size: 18vw;
     margin-bottom: 50px;
+    font-family: 'Lora', serif;
     text-transform: uppercase;
 }
 
@@ -219,9 +221,6 @@
 
 .contact .right {
     width: 35%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 .contact .right_top {
 }
@@ -260,7 +259,6 @@
     text-align: end;
 }
 .contact .close_btn {
-    /* display: none; */
     position: absolute;
     top: -20px;
     right: 50px;
@@ -268,6 +266,59 @@
     border-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+/* project */
+.project {
+    /* background-color: #f0f0f0; */
+    position: relative;
+}
+
+.project .container {
+    padding: 200px 40px !important;
+}
+
+.project .project_wrap {
+    position: relative;
+}
+
+.project h2 {
+    font-size: 200px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    position: sticky;
+    top: 200px;
+    z-index: 0;
+    margin: 0;
+}
+
+.project ul {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.project li.li1 {
+    justify-content: flex-start;
+}
+
+.project li.li2 {
+    justify-content: flex-end;
+}
+
+.project .box {
+    width: 48%;
+    height: 300px;
+    background: #fff6f4;
+    border-radius: 40px;
 }
 
 @media (max-width: 700px) {

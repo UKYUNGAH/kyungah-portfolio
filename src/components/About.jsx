@@ -66,18 +66,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div
-                className="next-section"
-                style={{
-                    height: '100vh',
-                    backgroundColor: '#f0f0f0',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}
-            >
-                <h2>Next Section</h2>
-            </div>
         </div>
     );
 };

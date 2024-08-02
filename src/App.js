@@ -3,9 +3,10 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import About from './components/About';
+import Project from './components/Project';
+import Contact from './components/Contact';
 import Lenis from 'lenis';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Contact from './components/Contact';
 
 const colorModes = [
     { background: '#FFECDD', color: '#FA3701', borderColor: '#FA3701' },
@@ -47,6 +48,7 @@ function App() {
                 {location.pathname !== '/Contact' && <Header changeMood={changeMood} />}
                 {location.pathname !== '/Contact' && <Main data-aos="fade-up" />}
                 {location.pathname !== '/Contact' && <About />}
+                {location.pathname !== '/Contact' && <Project />}
 
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />
