@@ -18,6 +18,8 @@ const colorModes = [
 
 function App() {
     const [modeIndex, setModeIndex] = useState(0);
+    const location = useLocation();
+
     const changeMood = () => {
         setModeIndex((prevIndex) => (prevIndex + 1) % colorModes.length);
         const root = document.documentElement;
@@ -42,9 +44,9 @@ function App() {
     return (
         <div className="App">
             <div className="wrap">
-                <Header changeMood={changeMood} />
-                <Main data-aos="fade-up" />
-                <About />
+                {location.pathname !== '/Contact' && <Header changeMood={changeMood} />}
+                {location.pathname !== '/Contact' && <Main data-aos="fade-up" />}
+                {location.pathname !== '/Contact' && <About />}
 
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />

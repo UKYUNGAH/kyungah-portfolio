@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
 
 const Contact = () => {
+    const textBoxRef = useRef();
+
+    useEffect(() => {
+        gsap.to(textBoxRef.current, {
+            clipPath: 'circle(100% at 50% 50%)',
+            duration: 0.1,
+            ease: 'power2.inOut',
+        });
+    }, []);
     return (
         <div className="contact">
             <div className="container">
                 <div className="wrap">
                     <div className="left">
-                        <h3>lorem lorem</h3>
+                        <h3>Let’s connect</h3>
                         <h2>CONTECT</h2>
                         <div className="l_top">
                             <h4>유경아</h4>
@@ -27,17 +37,26 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="right">
-                        <div className="list_box">
-                            <h5>FIND OUT MORE</h5>
-                            <Link to="/">깃허브 바로가기</Link>
+                        <div className="right_top">
+                            <div className="list_box">
+                                <h5>FIND OUT MORE</h5>
+                                <Link to="/">깃허브 바로가기</Link>
+                            </div>
+                            <div className="list_box">
+                                <h5>PROFILE</h5>
+                                <Link to="/">서핏 프로필 바로가기</Link>
+                            </div>
                         </div>
-                        <div className="list_box">
-                            <h5>PROFILE</h5>
-                            <Link to="/">서핏 프로필 바로가기</Link>
+                        <div className="text_box" ref={textBoxRef}>
+                            안녕하세요! 제 프로필에 방문해주셔서 감사합니다. 더 많은 정보나 피드백이 필요하다면 언제든지
+                            연락 기다리고 있겠습니다. 앞으로 더 많은 오픈 소스 프로젝트에 기여하고, 새로운 기술을 배우며
+                            성장하고 싶습니다.
+                            <a href="mailto:ukyunga0.1@gmail.com">이메일로 문의하기</a>
                         </div>
-                        <div className="text_box">더많은 피드백~~~~~~</div>
                     </div>
-                    <button>X</button>
+                    <Link to={'/'} className="close_btn">
+                        ✕
+                    </Link>
                 </div>
             </div>
         </div>

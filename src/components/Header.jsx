@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link, Routes, Route, useLocation } from 'react-router-dom';
+import { Link, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import Contact from './Contact';
 
 const Header = ({ changeMood }) => {
-    const location = useLocation();
+    const navigate = useNavigate();
+
     useEffect(() => {
         AOS.init();
     }, []);
 
-    // if (location.pathname === '/Contact') {
-    //     return null;
-    // }
+    const handleContactClick = () => {
+        navigate('/Contact');
+    };
 
     return (
         <div className="header">
@@ -23,7 +25,7 @@ const Header = ({ changeMood }) => {
                     </button>
                 </div>
                 <div className="hr">
-                    <Link to="/Contact">contact</Link>
+                    <button onClick={handleContactClick}>contact</button>
                 </div>
             </div>
         </div>
