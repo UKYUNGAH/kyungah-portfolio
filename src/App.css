@@ -4,6 +4,7 @@
     --background-color: #ffecdd;
     --text-color: #fa3701;
     --border-color: #fa3701;
+    --hover-color: #de3304;
 }
 
 .wrap {
@@ -315,10 +316,105 @@
 }
 
 .project .box {
+    position: relative;
     width: 48%;
-    height: 300px;
     background: #fff6f4;
     border-radius: 40px;
+    padding: 30px 40px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.project .box.on .overlay {
+    display: block;
+}
+
+.project .contents {
+    text-align: center;
+}
+.project .contents h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.project .contents h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.project .contents h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.project .contents img {
+    width: 100%;
+}
+.project .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6eae7;
+    border-radius: 40px;
+    text-align: center;
+}
+.project .inner {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.project .inner p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.project .inner a {
+    display: block;
+    width: 70%;
+    margin: 0 auto 20px;
+    background: var(--text-color);
+    color: #fff;
+    padding: 20px 0;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+    font-size: 16px;
+}
+.project .inner a:hover {
+    background: var(--hover-color);
+    font-weight: 500;
+}
+
+.project .box1 {
+    width: 40%;
+}
+.project .box2 {
+    width: 50%;
+    transform: translate(-30px, -40px);
+}
+.project .box3 {
+    width: 60%;
+    transform: translate(100px, -20px);
+}
+.project .box4 {
+}
+.project .box5 {
+    width: 50%;
+    transform: translate(200px);
+}
+.project .box6 {
+    width: 60%;
+}
+.project .box8 {
+    transform: translateY(-20px);
+}
+.project .box9 {
+    width: 60%;
+    transform: translateX(200px);
 }
 
 @media (max-width: 700px) {
