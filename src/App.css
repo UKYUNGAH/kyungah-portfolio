@@ -189,6 +189,7 @@
     font-size: 100px;
     font-weight: 700;
     margin-bottom: 66px;
+    font-family: 'Lora', serif;
 }
 .contact .l_top {
 }
@@ -323,6 +324,12 @@
     padding: 30px 40px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
+/* .project .box.on {
+    transition: all 0.3s ease-in;
+}
+.project .box.on:hover {
+    transform: rotateY(180deg);
+} */
 .project .box.on .overlay {
     display: block;
 }
