@@ -444,6 +444,9 @@
     .project h2 {
         font-size: 5em;
     }
+    .project li {
+        z-index: 2;
+    }
     .project .box {
         width: 100%;
         transform: translate(0, 0);
