@@ -40,11 +40,15 @@ const Contact = () => {
                         <div className="right_top">
                             <div className="list_box">
                                 <h5>FIND OUT MORE</h5>
-                                <Link to="/">깃허브 바로가기</Link>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/UKYUNGAH">
+                                    깃허브 바로가기
+                                </a>
                             </div>
                             <div className="list_box">
                                 <h5>PROFILE</h5>
-                                <Link to="/">서핏 프로필 바로가기</Link>
+                                <a target="_blank" rel="noopener noreferrer" href="https://my.surfit.io/w/989694903">
+                                    서핏 프로필 바로가기
+                                </a>
                             </div>
                         </div>
                         <div className="text_box" ref={textBoxRef}>

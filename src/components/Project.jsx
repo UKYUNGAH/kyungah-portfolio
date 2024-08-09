@@ -28,7 +28,7 @@ const Project = () => {
             subtitle: 'Portfolio of Kyungah',
             imgSrc: '/project_port.png',
             className: 'box2',
-            url: 'https://kyungah-portfolio.vercel.app/',
+            url: '',
             githubUrl: 'https://github.com/UKYUNGAH/kyungah-portfolio',
         },
         {
@@ -119,8 +119,14 @@ const Project = () => {
                                         <div className="overlay">
                                             <div className="inner">
                                                 <p>{box.title}</p>
-                                                {box.url && <Link to={box.url}>배포사이트 바로가기</Link>}
-                                                <Link to="/">Github 바로가기</Link>
+                                                {box.url && (
+                                                    <a target="_blank" rel="noopener noreferrer" href={box.url}>
+                                                        배포사이트 바로가기
+                                                    </a>
+                                                )}
+                                                <a target="_blank" rel="noopener noreferrer" href={box.githubUrl}>
+                                                    Github 바로가기
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
