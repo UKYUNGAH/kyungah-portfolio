@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
 import { Link } from 'react-router-dom';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Project = () => {
     // 각 박스의 호버 상태를 배열로 관리
+    const containerRef = useRef(null);
     const [hoverIndex, setHoverIndex] = useState(null);
 
     const handleMouseOver = (index) => {

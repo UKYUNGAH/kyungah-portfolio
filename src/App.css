@@ -14,11 +14,11 @@
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
 .container {
     padding: 0 26px;
 }
 
+/* ====================== HEADER ====================== */
 .header {
     position: fixed;
     width: 100%;
@@ -62,8 +62,11 @@
     position: relative;
     font-size: 12px;
 }
+.header {
+    display: block;
+}
 
-/* --------------------------- 메인섹션 */
+/* ====================== MAIN ====================== */
 .main {
     position: relative;
     width: 100%;
@@ -102,6 +105,8 @@
 }
 .main .bottom .update {
 }
+
+/* ====================== ABOUT ====================== */
 .about .container {
     position: relative;
     width: 100%;
@@ -145,19 +150,13 @@
 
     background: var(--text-color);
     clip-path: circle(0% at 50% 50%);
-    transition: clip-path 1.5s ease-in; /* 애니메이션 효과 */
+    transition: clip-path 1.5s ease-in;
 }
 .about p.visible {
     clip-path: circle(150% at 50% 50%);
 }
 
-.next-section {
-}
-
-.header {
-    display: block;
-}
-
+/* ====================== CONTACT ====================== */
 .contact {
     position: relative;
     width: 100%;
@@ -165,12 +164,8 @@
     background: var(--background-color);
 }
 .contact .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0;
+    position: relative;
+    padding: 50px 0;
 }
 .contact .wrap {
     display: flex;
@@ -191,16 +186,12 @@
     margin-bottom: 66px;
     font-family: 'Lora', serif;
 }
-.contact .l_top {
-}
 .contact .l_top h4 {
     font-size: 18px;
     font-weight: 400;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 72px;
-}
-.contact .l_bottom {
 }
 .contact .l_bottom h4 {
     font-size: 18px;
@@ -220,13 +211,8 @@
     border: 1px solid var(--border-color);
     border-radius: 10px;
 }
-
 .contact .right {
     width: 35%;
-}
-.contact .right_top {
-}
-.contact .list_box {
 }
 .contact h5 {
     font-size: 18px;
@@ -270,7 +256,7 @@
     margin-bottom: 0;
 }
 
-/* project */
+/* ====================== PROJECT ====================== */
 .project {
     /* background-color: #f0f0f0; */
     position: relative;
@@ -324,16 +310,9 @@
     padding: 30px 40px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
-/* .project .box.on {
-    transition: all 0.3s ease-in;
-}
-.project .box.on:hover {
-    transform: rotateY(180deg);
-} */
 .project .box.on .overlay {
     display: block;
 }
-
 .project .contents {
     text-align: center;
 }
@@ -446,8 +425,50 @@
         height: auto;
         margin-bottom: 150px;
     }
+    .about .text_wrap {
+        width: 100%;
+    }
     .about p {
         width: 100%;
-        padding: 20px;
+        min-height: 550px;
+        max-height: 550px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vw;
+    }
+    .project .container {
+        padding: 100px 15px !important;
+    }
+    .project h2 {
+        font-size: 5em;
+    }
+    .project .box {
+        width: 100%;
+        transform: translate(0, 0);
+        padding: 30px 15px;
+    }
+    .contact {
+        height: auto;
+    }
+    .contact .container {
+        padding: 50px 15px;
+    }
+    .contact .wrap {
+        flex-direction: column;
+    }
+    .contact h2 {
+        font-size: 18vw;
+    }
+    .contact .left {
+        width: 100%;
+    }
+    .contact .right {
+        width: 100%;
+    }
+    .contact .close_btn {
+        top: -30px;
+        right: 10px;
     }
 }
