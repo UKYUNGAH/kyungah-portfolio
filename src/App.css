@@ -281,17 +281,18 @@
 }
 
 .project ul {
+    position: relative;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .project li {
     display: flex;
     width: 100%;
     margin-bottom: 30px;
-    z-index: 1;
     position: relative;
 }
 
@@ -445,7 +446,6 @@
         font-size: 5em;
     }
     .project li {
-        z-index: 2;
     }
     .project .box {
         width: 100%;
