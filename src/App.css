@@ -53,7 +53,7 @@
     transition: all 0.3s ease-in;
 }
 .header .hm button:hover {
-    background: var(--hover-color);
+    background: var(--text-color);
     color: var(--background-color);
 }
 .header .hr {
