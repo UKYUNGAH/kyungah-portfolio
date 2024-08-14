@@ -5,6 +5,7 @@ import Main from './components/Main';
 import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import FinalMessage from './components/FinalMessage';
 import Lenis from 'lenis';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -50,6 +51,7 @@ function App() {
                 {location.pathname !== '/Contact' && <Main data-aos="fade-up" />}
                 {location.pathname !== '/Contact' && <About />}
                 {location.pathname !== '/Contact' && <Project />}
+                {location.pathname !== '/Contact' && <FinalMessage />}
 
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />

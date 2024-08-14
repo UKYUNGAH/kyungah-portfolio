@@ -20,9 +20,13 @@ const Contact = () => {
                         <h3>Let’s connect</h3>
                         <h2>CONTECT</h2>
                         <div className="l_top">
-                            <h4>유경아</h4>
-                            <h4>ukyunga0.1@gmail.com</h4>
-                            <h4>(+ 82) 010 - 7794 - 2702</h4>
+                            <h4 className="info">유경아</h4>
+                            <a href="mailto:ukyunga0.1@gmail.com" className="info">
+                                ukyunga0.1@gmail.com
+                            </a>
+                            <a href="tel:010-7794-2702" className="info">
+                                (+ 82) 010 - 7794 - 2702
+                            </a>
                         </div>
                         <div className="l_bottom">
                             <h4>사용가능 기술</h4>
@@ -52,9 +56,9 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="text_box" ref={textBoxRef}>
-                            안녕하세요! 제 프로필에 방문해주셔서 감사합니다. 더 많은 정보나 피드백이 필요하다면 언제든지
-                            연락 기다리고 있겠습니다. 앞으로 더 많은 오픈 소스 프로젝트에 기여하고, 새로운 기술을 배우며
-                            성장하고 싶습니다.
+                            안녕하세요! 제 포트폴리오 사이트에 방문해주셔서 감사합니다. 더 많은 정보나 피드백이
+                            필요하다면 언제든지 연락 기다리고 있겠습니다. 앞으로 더 많은 프로젝트에 기여하고, 새로운
+                            기술을 배우며 성장하고 싶습니다.
                             <br />
                             <a href="mailto:ukyunga0.1@gmail.com">이메일로 문의하기</a>
                         </div>
