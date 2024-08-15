@@ -42,7 +42,6 @@
     text-align: center;
     flex: 1;
 }
-
 .header .hm button {
     width: 136px;
     font-size: 12px;
@@ -119,8 +118,6 @@
 .main a:hover span {
     padding: 0 5px;
 }
-.main .bottom .update {
-}
 
 /* ====================== ABOUT ====================== */
 .about .container {
@@ -133,21 +130,18 @@
     justify-content: flex-start;
     overflow-x: hidden;
 }
-
 .about h2 {
     font-size: 18vw;
     margin-bottom: 50px;
     font-family: 'Lora', serif;
     text-transform: uppercase;
 }
-
 .about .text_box {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
 }
-
 .about .text_wrap {
     width: 88%;
     margin: 0 auto;
@@ -163,7 +157,6 @@
     padding: 100px 122px;
     letter-spacing: 3px;
     font-size: 3.5vw;
-
     background: var(--text-color);
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 1.5s ease-in;
@@ -213,7 +206,6 @@
 .contact .hover {
     position: relative;
 }
-
 .contact .hover::after {
     content: '';
     position: absolute;
@@ -229,27 +221,22 @@
     opacity: 0;
     transition: opacity 0.7s ease-in;
 }
-
 .contact .info1:hover::after {
     content: '메일보내기';
     opacity: 1;
 }
-
 .contact .info2:hover::after {
     content: '전화 연결';
     opacity: 1;
 }
-
 .contact .info3:hover::after {
     content: '깃허브 바로가기';
     opacity: 1;
 }
-
 .contact .info4:hover::after {
     content: '프로필 바로가기';
     opacity: 1;
 }
-
 .contact .l_bottom h4 {
     font-size: 18px;
     font-weight: 400;
@@ -314,10 +301,6 @@
     background: #fff;
     animation: line 0.3s ease-in;
 }
-.footer a {
-}
-.footer a:hover::after {
-}
 .contact .close_btn {
     position: absolute;
     top: -20px;
@@ -330,18 +313,14 @@
 
 /* ====================== PROJECT ====================== */
 .project {
-    /* background-color: #f0f0f0; */
     position: relative;
 }
-
 .project .container {
     padding: 200px 40px !important;
 }
-
 .project .project_wrap {
     position: relative;
 }
-
 .project h2 {
     font-size: 200px;
     font-family: 'Lora', serif;
@@ -351,7 +330,6 @@
     z-index: 0;
     margin: 0;
 }
-
 .project ul {
     position: relative;
     margin-top: 80px;
@@ -359,7 +337,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .project li {
     display: flex;
     width: 100%;
@@ -371,11 +348,9 @@
 .project li.li1 {
     justify-content: flex-start;
 }
-
 .project li.li2 {
     justify-content: flex-end;
 }
-
 .project .box {
     position: relative;
     width: 48%;
@@ -512,8 +487,6 @@
 }
 
 /* ====================== FOOTER ====================== */
-.footer {
-}
 .footer .container {
     padding: 100px 26px 70px;
 }
@@ -529,16 +502,6 @@
 .footer .footer_inner1 {
     width: 50%;
 }
-.footer .footer_info {
-}
-.footer .footer_inner {
-}
-.footer .footer_mail {
-}
-.footer .footer_text {
-}
-.footer ul {
-}
 .footer li {
     margin-bottom: 6px;
 }
@@ -550,7 +513,21 @@
 .footer p span {
     font-size: 15px;
 }
-
+.footer a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0 5px;
+}
+.footer a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+    animation: line 0.3s ease-in;
+}
 @keyframes line {
     0% {
         width: 10%;
@@ -567,12 +544,15 @@
 }
 
 @media (max-width: 700px) {
+    /* ====================== MAIN ====================== */
     .main h1 {
         font-size: 77px;
     }
     .main a {
         padding: 10px 15px;
     }
+
+    /* ====================== ABOUT ====================== */
     .about {
         padding: 130px 0;
     }
@@ -596,13 +576,13 @@
         align-items: center;
         font-size: 7vw;
     }
+
+    /* ====================== PROJECT ====================== */
     .project .container {
         padding: 100px 15px !important;
     }
     .project h2 {
         font-size: 5em;
-    }
-    .project li {
     }
     .project .box {
         width: 100%;
@@ -614,6 +594,8 @@
         margin-bottom: 40px;
         font-size: 6vw;
     }
+
+    /* ====================== CONTACT ====================== */
     .contact {
         height: auto;
     }
@@ -636,6 +618,8 @@
         top: -30px;
         right: 10px;
     }
+
+    /* ====================== FINAL ====================== */
     .final .container {
         height: auto;
         padding: 200px 20px 50px;
@@ -650,6 +634,8 @@
         font-size: 10vw;
         width: 100%;
     }
+
+    /* ====================== FOOTER ====================== */
     .footer .container {
         padding: 100px 20px 55px;
     }
@@ -666,7 +652,6 @@
     .footer .footer_inner:nth-child(2) {
         width: 60%;
     }
-
     .footer .footer_inner:nth-child(3) {
         width: 40%;
     }
