@@ -21,10 +21,10 @@ const Contact = () => {
                         <h2>CONTECT</h2>
                         <div className="l_top">
                             <h4 className="info">유경아</h4>
-                            <a href="mailto:ukyunga0.1@gmail.com" className="info">
+                            <a href="mailto:ukyunga0.1@gmail.com" className="info info1 hover">
                                 ukyunga0.1@gmail.com
                             </a>
-                            <a href="tel:010-7794-2702" className="info">
+                            <a href="tel:010-7794-2702" className="info info2 hover">
                                 (+ 82) 010 - 7794 - 2702
                             </a>
                         </div>
@@ -44,14 +44,24 @@ const Contact = () => {
                         <div className="right_top">
                             <div className="list_box">
                                 <h5>FIND OUT MORE</h5>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/UKYUNGAH">
-                                    깃허브 바로가기
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/UKYUNGAH"
+                                    className="hover info3"
+                                >
+                                    Github
                                 </a>
                             </div>
                             <div className="list_box">
                                 <h5>PROFILE</h5>
-                                <a target="_blank" rel="noopener noreferrer" href="https://my.surfit.io/w/989694903">
-                                    서핏 프로필 바로가기
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://my.surfit.io/w/989694903"
+                                    className="hover info4"
+                                >
+                                    Surfit Profile
                                 </a>
                             </div>
                         </div>
@@ -60,7 +70,9 @@ const Contact = () => {
                             필요하다면 언제든지 연락 기다리고 있겠습니다. 앞으로 더 많은 프로젝트에 기여하고, 새로운
                             기술을 배우며 성장하고 싶습니다.
                             <br />
-                            <a href="mailto:ukyunga0.1@gmail.com">이메일로 문의하기</a>
+                            <div className="mail">
+                                <a href="mailto:ukyunga0.1@gmail.com">이메일로 문의하기</a>
+                            </div>
                         </div>
                     </div>
                     <Link to={'/'} className="close_btn">

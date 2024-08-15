@@ -6,6 +6,7 @@ import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import FinalMessage from './components/FinalMessage';
+import Footer from './components/Footer';
 import Lenis from 'lenis';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -52,6 +53,7 @@ function App() {
                 {location.pathname !== '/Contact' && <About />}
                 {location.pathname !== '/Contact' && <Project />}
                 {location.pathname !== '/Contact' && <FinalMessage />}
+                {location.pathname !== '/Contact' && <Footer />}
 
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />
