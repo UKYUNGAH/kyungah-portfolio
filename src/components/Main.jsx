@@ -25,7 +25,7 @@ const Main = () => {
                             &#123; <span>이력서보러가기</span> &#125;
                         </Link>
                     </div>
-                    <div className="update">update 2024.08</div>
+                    <div className="update">update 2025.03</div>
                 </div>
             </div>
         </div>
