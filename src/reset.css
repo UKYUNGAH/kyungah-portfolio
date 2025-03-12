@@ -146,6 +146,7 @@ select {
 }
 
 @import url('https://cdn.jsdelivr.net/npm/pretendard@1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap');
 
 input,
 textarea,

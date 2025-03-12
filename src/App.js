@@ -66,20 +66,13 @@ function App() {
             </HelmetProvider>
 
             <div className="wrap">
-                {location.pathname !== '/Contact' && <Header changeMood={changeMood} />}
-                {location.pathname !== '/Contact' && <Main data-aos="fade-up" />}
-                {location.pathname !== '/Contact' && <About />}
-                {location.pathname !== '/Contact' && <Project />}
-                {location.pathname !== '/Contact' && <FinalMessage />}
-                {location.pathname !== '/Contact' && <Footer />}
-
                 <Routes>
                     <Route
                         path="/"
                         element={
                             <>
                                 <Header changeMood={changeMood} />
-                                <Main />
+                                <Main data-aos="fade-up" />
                                 <About />
                                 <Project />
                                 <FinalMessage />
