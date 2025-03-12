@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import Contact from './Contact';
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({ changeMood }) => {
     const navigate = useNavigate();

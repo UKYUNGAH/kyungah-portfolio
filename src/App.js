@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -48,20 +48,22 @@ function App() {
 
     return (
         <div className="App">
-            <Helmet>
-                <title>유경아 포트폴리오 | 프론트엔드 개발자</title>
-                <meta
-                    name="description"
-                    content="프론트엔드 개발 및 웹 퍼블리싱 작업물을 소개하는 유경아의 포트폴리오 페이지입니다."
-                />
-                <meta property="og:title" content="유경아 포트폴리오 | 프론트엔드 개발자" />
-                <meta
-                    property="og:description"
-                    content="프론트엔드 개발 및 웹 퍼블리싱 포트폴리오입니다. 다양한 프로젝트와 작업물을 확인해보세요:)"
-                />
-                {/* <meta property="og:image" content="https://kyungah-portfolio.vercel.app/" />  */}
-                <meta property="og:url" content="https://kyungah-portfolio.vercel.app/" />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <title>유경아 포트폴리오 | 프론트엔드 개발자</title>
+                    <meta
+                        name="description"
+                        content="프론트엔드 개발 및 웹 퍼블리싱 작업물을 소개하는 유경아의 포트폴리오 페이지입니다."
+                    />
+                    <meta property="og:title" content="유경아 포트폴리오 | 프론트엔드 개발자" />
+                    <meta
+                        property="og:description"
+                        content="프론트엔드 개발 및 웹 퍼블리싱 포트폴리오입니다. 다양한 프로젝트와 작업물을 확인해보세요:)"
+                    />
+                    {/* <meta property="og:image" content="https://kyungah-portfolio.vercel.app/" />  */}
+                    <meta property="og:url" content="https://kyungah-portfolio.vercel.app/" />
+                </Helmet>
+            </HelmetProvider>
 
             <div className="wrap">
                 {location.pathname !== '/Contact' && <Header changeMood={changeMood} />}
@@ -72,6 +74,19 @@ function App() {
                 {location.pathname !== '/Contact' && <Footer />}
 
                 <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <Header changeMood={changeMood} />
+                                <Main />
+                                <About />
+                                <Project />
+                                <FinalMessage />
+                                <Footer />
+                            </>
+                        }
+                    />
                     <Route path="/Contact" element={<Contact />} />
                 </Routes>
             </div>
