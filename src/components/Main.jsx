@@ -21,8 +21,8 @@ const Main = () => {
                             사용자 경험을 중시하는 <br /> 개발자가 되기위해 노력하는
                             <br /> 유경아 입니다.
                         </p>
-                        <Link to="https://my.surfit.io/w/989694903">
-                            &#123; <span>이력서보러가기</span> &#125;
+                        <Link to="https://github.com/UKYUNGAH">
+                            &#123; <span>깃허브 보러가기</span> &#125;
                         </Link>
                     </div>
                     <div className="update">update 2025.03</div>
