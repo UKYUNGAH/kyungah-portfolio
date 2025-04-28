@@ -55,12 +55,19 @@ function App() {
                         name="description"
                         content="프론트엔드 개발 및 웹 퍼블리싱 작업물을 소개하는 유경아의 포트폴리오 페이지입니다."
                     />
+                    <meta
+                        name="keywords"
+                        content="프론트엔드 포트폴리오, 웹 퍼블리셔, 포트폴리오, 퍼블리셔 포트폴리오, 유경아, React, 웹개발"
+                    />
+                    <meta name="robots" content="index, follow" />
+                    <meta name="author" content="유경아" />
+
                     <meta property="og:title" content="유경아 포트폴리오 | 프론트엔드 개발자" />
                     <meta
                         property="og:description"
                         content="프론트엔드 개발 및 웹 퍼블리싱 포트폴리오입니다. 다양한 프로젝트와 작업물을 확인해보세요:)"
                     />
-                    {/* <meta property="og:image" content="https://kyungah-portfolio.vercel.app/" />  */}
+                    <meta property="og:image" content="https://kyungah-portfolio.vercel.app/thumbnail.png" />
                     <meta property="og:url" content="https://kyungah-portfolio.vercel.app/" />
                 </Helmet>
             </HelmetProvider>
