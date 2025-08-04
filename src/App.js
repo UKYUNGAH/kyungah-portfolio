@@ -51,10 +51,8 @@ function App() {
             <HelmetProvider>
                 <Helmet>
                     <title>유경아 포트폴리오 | 프론트엔드 개발자</title>
-                    <meta
-                        name="google-site-verification"
-                        content="google-site-verification: google7b74b0c8ab4a2225.html"
-                    />
+
+                    <meta name="google-site-verification" content="a7Ye6apCGmZJmfZX5Qplk77nA5qdSsmFJjjuAgj5P88" />
 
                     <meta
                         name="description"
