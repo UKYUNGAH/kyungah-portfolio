@@ -46,83 +46,32 @@ function App() {
         requestAnimationFrame(raf);
     }, []);
 
-    // 페이지별 메타 데이터
-    const getPageMeta = () => {
-        switch (location.pathname) {
-            case '/Contact':
-                return {
-                    title: '연락처 - 유경아 포트폴리오 | 프론트엔드 개발자',
-                    description:
-                        '프론트엔드 개발자 유경아의 연락처 정보입니다. 프로젝트 문의나 협업 제안을 환영합니다.',
-                    url: 'https://kyungah-portfolio.vercel.app/Contact',
-                };
-            default:
-                return {
-                    title: '유경아 포트폴리오 | 프론트엔드 개발자',
-                    description: '프론트엔드 개발 및 웹 퍼블리싱 작업물을 소개하는 유경아의 포트폴리오 페이지입니다.',
-                    url: 'https://kyungah-portfolio.vercel.app/',
-                };
-        }
-    };
-
-    const pageMeta = getPageMeta();
-
     return (
         <div className="App">
             <HelmetProvider>
                 <Helmet>
-                    <title>{pageMeta.title}</title>
+                    <title>유경아 포트폴리오 | 프론트엔드 개발자</title>
 
-                    {/* Google Site Verification */}
                     <meta name="google-site-verification" content="a7Ye6apCGmZJmfZX5Qplk77nA5qdSsmFJjjuAgj5P88" />
-                    {/* 기본 메타 태그 */}
-                    <meta name="description" content={pageMeta.description} />
+
+                    <meta
+                        name="description"
+                        content="프론트엔드 개발 및 웹 퍼블리싱 작업물을 소개하는 유경아의 포트폴리오 페이지입니다."
+                    />
                     <meta
                         name="keywords"
-                        content="프론트엔드 포트폴리오, 웹 퍼블리셔, 포트폴리오, 퍼블리셔 포트폴리오, 유경아, React, 웹개발, 웹디자인, JavaScript"
+                        content="프론트엔드 포트폴리오, 웹 퍼블리셔, 포트폴리오, 퍼블리셔 포트폴리오, 유경아, React, 웹개발"
                     />
                     <meta name="robots" content="index, follow" />
                     <meta name="author" content="유경아" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                    {/* Canonical URL */}
-                    <link rel="canonical" href={pageMeta.url} />
-
-                    {/* Open Graph 태그 */}
-                    <meta property="og:title" content={pageMeta.title} />
-                    <meta property="og:description" content={pageMeta.description} />
+                    <meta property="og:title" content="유경아 포트폴리오 | 프론트엔드 개발자" />
+                    <meta
+                        property="og:description"
+                        content="프론트엔드 개발 및 웹 퍼블리싱 포트폴리오입니다. 다양한 프로젝트와 작업물을 확인해보세요:)"
+                    />
                     <meta property="og:image" content="https://kyungah-portfolio.vercel.app/thumbnail.png" />
-                    <meta property="og:url" content={pageMeta.url} />
-                    <meta property="og:type" content="website" />
-                    <meta property="og:site_name" content="유경아 포트폴리오" />
-
-                    {/* Twitter Card 태그 */}
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:title" content={pageMeta.title} />
-                    <meta name="twitter:description" content={pageMeta.description} />
-                    <meta name="twitter:image" content="https://kyungah-portfolio.vercel.app/thumbnail.png" />
-
-                    {/* 언어 설정 */}
-                    <meta httpEquiv="content-language" content="ko-KR" />
-                    <html lang="ko" />
-
-                    {/* 구조화된 데이터 (JSON-LD) */}
-                    <script type="application/ld+json">
-                        {JSON.stringify({
-                            '@context': 'https://schema.org',
-                            '@type': 'Person',
-                            name: '유경아',
-                            jobTitle: '프론트엔드 개발자',
-                            description: '프론트엔드 개발 및 웹 퍼블리싱 전문가',
-                            url: 'https://kyungah-portfolio.vercel.app',
-                            knowsAbout: ['React', 'JavaScript', 'HTML', 'CSS', '웹 퍼블리싱', '프론트엔드 개발'],
-                            alumniOf: '프론트엔드 개발',
-                            workLocation: {
-                                '@type': 'Place',
-                                name: '대한민국',
-                            },
-                        })}
-                    </script>
+                    <meta property="og:url" content="https://kyungah-portfolio.vercel.app/" />
                 </Helmet>
             </HelmetProvider>
 
