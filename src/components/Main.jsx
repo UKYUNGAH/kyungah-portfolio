@@ -27,7 +27,7 @@ const Main = () => {
                             &#123; <span>깃허브 보러가기</span> &#125;
                         </Link>
                     </div>
-                    <div className="update">update 2025.04</div>
+                    <div className="update">update 2026.01</div>
                 </div>
             </div>
         </div>
