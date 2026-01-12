@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,7 +23,7 @@ const Main = () => {
                             사용자 경험을 중시하는 <br /> 개발자가 되기위해 노력하는
                             <br /> 유경아 입니다.
                         </p>
-                        <Link to="https://github.com/UKYUNGAH">
+                        <Link href="https://github.com/UKYUNGAH" target="_blank" rel="noopener noreferrer">
                             &#123; <span>깃허브 보러가기</span> &#125;
                         </Link>
                     </div>

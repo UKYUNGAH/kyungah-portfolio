@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import gsap from 'gsap';
 
 const Contact = () => {
@@ -17,7 +19,7 @@ const Contact = () => {
             <div className="container">
                 <div className="wrap">
                     <div className="left">
-                        <h3>Let’s connect</h3>
+                        <h3>Let&#39;s connect</h3>
                         <h2>CONTECT</h2>
                         <div className="l_top">
                             <h4 className="info">유경아</h4>
@@ -75,7 +77,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to={'/'} className="close_btn">
+                    <Link href="/" className="close_btn">
                         ✕
                     </Link>
                 </div>
