@@ -20,6 +20,7 @@ const About = () => {
             if (pcText) pcText.style.display = 'none';
             if (moText) moText.style.display = 'block';
             p.style.fontSize = '4.5vw';
+            p.style.wordBreak = 'keep-all';
             p.style.minHeight = 'auto';
             p.style.maxHeight = 'none';
             p.style.padding = '40px 24px';
